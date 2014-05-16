@@ -26,7 +26,22 @@ class address extends database {
         $error = mysql_error();
         print ($error);
     }
-    
+    public function select_addr_data($aid,$params){
+           if($aid !=0){
+               $condition = "WHERE aid = ".$aid;
+           }
+           else{
+               $aid = '';
+           }
+           if(!empty($params)){
+                $fields = implode(' ', $params);
+           }
+           else{
+               $fields = '*';
+           }
+           $query = "SELECT ".$fields." from address". $condition;
+           parent::query_execute($query);
+       }
     
 }
 $add = new address(); 
