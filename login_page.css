@@ -65,8 +65,6 @@ footer {
     height: 100px;
 }
 
-g {
-    position: absolute;
-    margin-top: 634px;
-    margin-left: 600px;
+#logo {
+    padding-top: 5%;
 }
