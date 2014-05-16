@@ -13,6 +13,7 @@ and open the template in the editor.
     <title></title>
     <link href="foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
     <link href="login_page.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery-1.11.0.js"></script>
     <script src="foundation/js/foundation.min.js"></script>
 </head>
 <body>
@@ -55,8 +56,8 @@ and open the template in the editor.
             </div>
             <div class="panel large-3 medium-3 columns">
                 <form action="login_App.php">
-                    UserName<input type="text" name="uname">
-                    Password <input type="password" name="pass">
+                    <input type="text" name="uname" placeholder="User name">
+                    <input type="password" name="pass" placeholder="Password">
                     <input type="submit" class="small radius button" value="submit">
 
                     <div class="forgotpwd">
