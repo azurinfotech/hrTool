@@ -12,7 +12,7 @@
     define('DB','hrtool');
     class database{
         public $link;
-
+        
        function  __construct(){
            //connect to the database
         $this ->link = mysqli_connect(HOST,USERNAME,PASS);
