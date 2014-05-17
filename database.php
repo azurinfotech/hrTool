@@ -15,9 +15,9 @@
 
        function  __construct(){
            //connect to the database
-        $this ->link = mysql_connect(HOST,USERNAME,PASS);
+        $this ->link = mysqli_connect(HOST,USERNAME,PASS);
         if(!$this ->link){
-            die('Could not connect to the server:'. mysql_error());
+            die('Could not connect to the server:'. mysqli_error());
         }
            else{
                $this -> select_db();
@@ -25,18 +25,18 @@
     }
 
         public function select_db(){
-            $db_sel = mysql_select_db(DB,$this ->link);
+            $db_sel = mysqli_select_db(DB,$this ->link);
             if(!$db_sel){
-                die('Could not connect to Database'.mysql_error());
+                die('Could not connect to Database'.mysqli_error());
             }
         }
 
         public function query_execute($query){
-            $result = mysql_query(mysql_real_escape_string($query),$this -> link);
+            $result = mysqli_query(mysqli_real_escape_string($query),$this -> link);
             return $result;
         }
 
         function __destruct(){
-            mysql_close();
+            mysqli_close();
         }
     }

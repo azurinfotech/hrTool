@@ -27,7 +27,7 @@ class newlogin extends database {
                 ."status INT NOT NULL,PRIMARY KEY(uid))";  
         
         $result = parent::query_execute($query);
-        $error = mysql_error();
+        $error = mysqli_error();
         print ($error);
         
        }
@@ -45,7 +45,7 @@ class newlogin extends database {
                $fields = '* ';
            }
            $query = "SELECT ".$fields." from user". $condition;
-          $result = mysql_fetch_assoc( parent::query_execute($query));
+          $result = mysqli_fetch_assoc( parent::query_execute($query));
            return $result;
        }
 } 
