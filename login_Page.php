@@ -9,6 +9,7 @@ and open the template in the editor.
 ?>
 <html>
 <head>
+   <header> </header>
     <meta charset="UTF-8">
     <title></title>
     <link href="foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
@@ -18,10 +19,9 @@ and open the template in the editor.
 </head>
 <body>
 <!-- Azur logo -->
-<div class="row">
-    <img id="logo" src="foundation/logo.png" alt="" height="100px" width="150px">
-</div>
+
 <section id="main-content">
+    
     <div class="row form_size">
 
         <div class="row large-12 columns">
@@ -58,7 +58,7 @@ and open the template in the editor.
                 <form action="login_App.php">
                     <input type="text" name="uname" placeholder="User name">
                     <input type="password" name="pass" placeholder="Password">
-                    <input type="submit" class="small radius button" value="submit">
+                    <input type="submit" class="small radius button" value="submit" style="width:70px; height:40px; padding:10px;">
 
                     <div class="forgotpwd">
                         <a href="forgotpass.php" "> Forgot Password </a>
@@ -67,17 +67,8 @@ and open the template in the editor.
                 </form>
             </div>
         </div>
+        
 </section>
-<footer class="row">
-    <div class="large-12 columns">
-        <hr/>
-        <div class="row">
-            <div class="large-6 columns">
-                <p>© Azur Infotech</p>
-            </div>
-        </div>
-    </div>
-</footer>
 </body>
 </html>
 
