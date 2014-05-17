@@ -27,11 +27,7 @@ class newlogin extends database {
                 ."status INT NOT NULL,PRIMARY KEY(uid),INDEX(aid), "
                 . "INDEX(eid),"
                 . "INDEX(off_id),INDEX(kra_id),INDEX(tid))";  
-        
-        $result = parent::query_execute($query);
-        $error = mysqli_error();
-        print ($error);
-        
+         parent::query_execute($query);
        }
        public function select_user_data($uid,$params){
            if($uid !=0){
@@ -47,7 +43,7 @@ class newlogin extends database {
                $fields = '* ';
            }
            $query = "SELECT ".$fields." from user". $condition;
-          $result = mysqli_fetch_assoc( parent::query_execute($query));
+          $result = parent::query_execute($query);
            return $result;
        }
 } 
