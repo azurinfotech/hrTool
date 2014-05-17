@@ -11,6 +11,7 @@ class empofficial extends database {
     public function __construct() {
            parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS emp_official(off_id INT NOT NULL AUTO_INCREMENT,"
+        . "uid INT NOT NULL,"
         . "designation VARCHAR(45) NOT NULL,"
         . "date_join DATE NOT NULL,"
         . "pre_experience VARCHAR(45),"
@@ -22,9 +23,7 @@ class empofficial extends database {
         . "second_quater VARCHAR(45),"
         . "third_quater VARCHAR(45),"
         . "fourth_quater VARCHAR(45),"
-        . "department INT NOT NULL,PRIMARY KEY(off_id))";
-        
-        
+        . "department INT NOT NULL,PRIMARY KEY(off_id),INDEX(uid))";        
         $result = parent::query_execute($query);
         $error = mysql_error();
         print ($error);
