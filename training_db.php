@@ -15,7 +15,7 @@ class training extends database {
         . "train_name VARCHAR(45) NOT NULL,"
         . "trainer_name VARCHAR(45) NOT NULL,"
         . "train_sdate VARCHAR(45) NOT NULL,"
-        . "train_edate VARCHAR(45) NOT NULL,,PRIMARY KEY(tid_id))";
+        . "train_edate VARCHAR(45) NOT NULL,PRIMARY KEY(tid))";
         
        $result = parent::query_execute($query);
         $error = mysql_error();

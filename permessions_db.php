@@ -15,12 +15,12 @@ class permessions_db extends database {
         $query = "CREATE TABLE IF NOT EXISTS permessions(per_id INT NOT NULL AUTO_INCREMENT,"
         . "per_name VARCHAR(45) NOT NULL,"
         . "rid INT NOT NULL,"
-        . "active_inactive BOOL, PRIMARY KEY(per_id))";
+        . "active_inactive BOOL, PRIMARY KEY(per_id),INDEX(rid))";
        
         $result = parent::query_execute($query);
         $error = mysql_error();
         print ($error);
     }
 }
-$perm = new permessions();    
+$perm = new permessions_db();    
 

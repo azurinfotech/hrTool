@@ -42,7 +42,7 @@ class kra_db extends database {
        }
 
 }
-$kr = new kra();    
+$kr = new kra_db();    
 
 
 
