@@ -20,14 +20,14 @@
             <td><input type="text"  placeholder="Employee Number"></td>
         </tr>
         <tr>
-            <td><input type="password" placeholder="password"</td>
+            <td><input type="password" placeholder="password" id="pass1"></td>
             <td><a class="inline"<label>Status</label></a>
     <select class="container"> <option value="Active" >Active</option>
     <option value="Inactive" >Inactive</option>
     </select></td>
         </tr>
         <tr>
-            <td> <input type="password" placeholder="confirm password"></td>
+            <td> <input type="password" placeholder="confirm password" id="pass2"></td>
             <td><input type="file"> </td>
         </tr>
         <tr>
@@ -40,29 +40,29 @@
         
         <tr>
             <td></td>
-            <td> <a href="#" class="small radius button">Save</a></td>
+            <td> <a href="#" class="small radius button" onclick="myFunction()">Save</a></td>
         </tr>
                </table>
             
-             
-            
-           
-            
-           
-   
-   
-     </form>
->>>>>>> Stashed changes
+         </form>
+
             </div>
    
-       
-  
-    
-</div>
-
-
-
-
+ </div>
 </body>
+<script>
+    function myFunction() {
+        var pass1 = document.getElementById("pass1").value;
+        var pass2 = document.getElementById("pass2").value;
+        if (pass1 != pass2) {
+            alert("Passwords Do not match");
+            document.getElementById("pass1").style.borderColor = "#E34234";
+            document.getElementById("pass2").style.borderColor = "#E34234";
+        }
+        else {
+            alert("passwors match");
+        }
+    }
+</script>
 </html>	
 	        
