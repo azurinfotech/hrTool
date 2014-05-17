@@ -13,12 +13,12 @@ class roles_db extends database {
            parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS roles(rid INT NOT NULL AUTO_INCREMENT,"
         . "role_name VARCHAR(45) NOT NULL,"
-        . "uid VARCHAR(45), PRIMARY KEY(per_id))";
+        . "uid INT NOT NULL, PRIMARY KEY(rid),INDEX(uid))";
        
         $result = parent::query_execute($query);
         $error = mysql_error();
         print ($error);
     }
 }
-$rol = new roles();    
+$rol = new roles_db();    
 

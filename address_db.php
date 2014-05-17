@@ -12,6 +12,7 @@ class address extends database {
     public function __construct() {
         parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS address(aid INT NOT NULL AUTO_INCREMENT,"
+        . "uid INT NOT NULL,"
         . "per_addr VARCHAR(45) NOT NULL,"
         . "cur_addr VARCHAR(45) NOT NULL,"
         . "off_mob INT NOT NULL,"
@@ -20,7 +21,8 @@ class address extends database {
         . "state VARCHAR(45) NOT NULL,"
         . "city VARCHAR(45) NOT NULL,"
         . "country VARCHAR(45) NOT NULL,"
-        . "tax_id VARCHAR(45) NOT NULL,PRIMARY KEY(aid))";
+        . "tax_id VARCHAR(45) NOT NULL,PRIMARY KEY(aid),INDEX(tax_id),"
+        . "INDEX(uid))";
      
       $result = parent::query_execute($query);
         $error = mysql_error();

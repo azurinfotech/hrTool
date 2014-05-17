@@ -12,18 +12,22 @@
     <h3>Employee register form</h3>
     <div id="azurinfo" class="row" align="center">
   <div class=" large-12 medium-12 columns">
-    <form class="container1" action="loginApp.php">
+    <form class="container1" action="register_App.php" method="post">
         <table style="width:500px; padding:10px;" >
         <tr>
                 
-            <td> <input type="text"  placeholder="Email"></td>
-            <td><input type="text"  placeholder="Employee Number"></td>
+            <td> <input type="text"  placeholder="Email" id="email" name="email"></td>
+            <td><input type="text"  placeholder="Employee Number" name="enum"></td>
         </tr>
         <tr>
+
             <td><input type="password" placeholder="password" id="pass1"></td>
+
+            
+
             <td><a class="inline"<label>Status</label></a>
-    <select class="container"> <option value="Active" >Active</option>
-    <option value="Inactive" >Inactive</option>
+    <select class="container" name="status"> <option value=0>Active</option>
+    <option value=1 >Inactive</option>
     </select></td>
         </tr>
         <tr>
@@ -31,11 +35,11 @@
             <td><input type="file"> </td>
         </tr>
         <tr>
-            <td><input type="text" placeholder="First Name"></td>
-            <td><input type="file" value="Upload Photo"></td>
+            <td><input type="text" placeholder="First Name" name="fname"></td>
+            <td><input type="file" value="Upload Photo" name="pic"></td>
         </tr>
         <tr>
-            <td> <input type="text" placeholder="Last Name"></td>
+            <td> <input type="text" placeholder="Last Name" name="lname"></td>
         </tr>
         
         <tr>
@@ -49,6 +53,7 @@
             </div>
    
  </div>
+
 </body>
 <script>
     function myFunction() {
@@ -59,8 +64,11 @@
             document.getElementById("pass1").style.borderColor = "#E34234";
             document.getElementById("pass2").style.borderColor = "#E34234";
         }
-        else {
-            alert("passwors match");
+        var email = document.getElementById("email").value;
+        if(email == '' || pass1 == ''){
+            alert("Username or Password cannot be empty");
+            document.getElementById("pass1").style.borderColor = "#E34234";
+            document.getElementById("email").style.borderColor = "#E34234";
         }
     }
 </script>
