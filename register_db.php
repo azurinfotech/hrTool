@@ -24,7 +24,9 @@ class newlogin extends database {
                 . "fname  VARCHAR(45) NOT NULL,"
                 . "lname  VARCHAR(45) NOT NULL,"
                 . "off_email  VARCHAR(45) NOT NULL,"
-                ."status INT NOT NULL,PRIMARY KEY(uid))";  
+                ."status INT NOT NULL,PRIMARY KEY(uid),INDEX(aid), "
+                . "INDEX(eid),"
+                . "INDEX(off_id),INDEX(kra_id),INDEX(tid))";  
         
         $result = parent::query_execute($query);
         $error = mysql_error();

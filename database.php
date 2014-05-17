@@ -9,7 +9,7 @@
     define('HOST','localhost');
     define('USERNAME','root');
     define('PASS','');
-    define('DB','php_test');
+    define('DB','hrtool');
     class database{
         public $link;
 
