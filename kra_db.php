@@ -12,13 +12,14 @@ class kra_db extends database {
     public function __construct() {
            parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS kra(kra_id INT NOT NULL AUTO_INCREMENT,"
+        ."uid INT NOT NULL"
         . "kr_area VARCHAR(45) NOT NULL,"
         . "kpa VARCHAR(45) NOT NULL,"
         . "weight_kpi VARCHAR(45) NOT NULL,"
         . "target VARCHAR(45) NOT NULL,"
         . "actual VARCHAR(45) NOT NULL,"
         . "score VARCHAR(45) NOT NULL,"
-        . "final_score VARCHAR(45),PRIMARY KEY(kra_id))";
+        . "final_score VARCHAR(45),PRIMARY KEY(kra_id),INDEX(uid))";
        
         $result = parent::query_execute($query);
         $error = mysql_error();
