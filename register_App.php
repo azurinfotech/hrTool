@@ -1,4 +1,5 @@
 <?php
+<<<<<<< Updated upstream
 include_once 'register_db.php';
 var_dump($_POST);
 $off_email = $_POST['email'];
@@ -30,6 +31,15 @@ $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $status = $_POST['status'];
 $emp_no = $_POST['enum'];
+=======
+$off_email = $_GET['email'];
+$salt = hash('sha1', 'azurinfotech');
+$password = hash('sha1', $_GET['pass']) . $salt;
+$fname = $_GET['fname'];
+$lname = $_GET['lname'];
+$status = $_GET['status'];
+var_dump($_POST);
+>>>>>>> Stashed changes
 include_once 'database.php';
 $db = new database();
 $query = "INSERT INTO user  (password,uid,emp_no,fname,lname,off_email,status) VALUES ('$password',0,'$emp_no','$fname','$lname','$off_email',$status)";
