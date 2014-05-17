@@ -19,11 +19,13 @@ class newlogin extends database {
                 . "fname  VARCHAR(45) NOT NULL,"
                 . "lname  VARCHAR(45) NOT NULL,"
                 . "off_email  VARCHAR(45) NOT NULL,"
+
                 ."status INT NOT NULL,PRIMARY KEY(uid))";          
         $result = parent::query_execute($query);
         $error = mysqli_error();
         print ($error);
         
+
        }
        public function select_user_data($uid,$params){
            if($uid !=0){
@@ -39,7 +41,7 @@ class newlogin extends database {
                $fields = '* ';
            }
            $query = "SELECT ".$fields." from user". $condition;
-          $result = mysqli_fetch_assoc( parent::query_execute($query));
+          $result = parent::query_execute($query);
            return $result;
        }
 } 
