@@ -1,23 +1,33 @@
+<?php include "session.php";
+$sess = new session();
+$sess->startSession();
+?>
 <html>
-  <head>
-<header> </header>
-        <meta charset="UTF-8">
-        <link href="foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
-        <link href="login_page.css" rel="stylesheet" type="text/css"/>
-         <link href="loginpage.css" rel="stylesheet" type="text/css"/>
-        <script src="foundation/js/foundation.min.js"></script>
-         <body>
-            <div class="row" id="forget"> 
-              <p2>To Reset Your Password,Enter Username and Email Id</p2>
-                <form action="login_App.php" >
-          <input type="text" name="Username" placeholder="User name" style="width:175px">
-          <input type="text" name="Emailid" placeholder="Email Id" style="width:175px">
-          <input type="submit" class="small radius button" value="submit" style="width:70px; height:40px; padding:10px;">
+<?php include 'head.php'; ?>
+<title>Forgot Password</title>
+<?php include 'header.php'; ?>
+<body>
+<section id="main-content">
+
+    <div class="row large-12">
+        <?php if (isset($_SESSION['flag_message'])) { ?>
+            <div class="row error-message">The User name does not exist</div>
+            <?php $style = "border-color: #E34234";
+            $sess->__unset('flag_message');
+        }; ?>
+        <h2>Forgot Password</h2>
+    </div>
+    <div class="row" id="forgot-pass">
+        <p>Enter your registered E-mail ID to recieve your password.</p>
+
+        <form action="forgotpass_App.php" method="post">
+            <input type="text" name="off_email" placeholder="Email Id" style="width:175px;<?php print($style); ?>;">
+            <input type="submit" class="small radius button" value="submit"
+                   style="width:70px; height:40px; padding:10px;">
         </form>
-      </div>
-        </head>       
- </body>
-               
- <p1>Forgot Password</p1>
+    </div>
+</section>
+<?php include 'footer.php'; ?>
+</body>
 </html>
     

@@ -13,16 +13,18 @@ class emp_personal extends database {
            parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS emp_personal(eid INT NOT NULL AUTO_INCREMENT,"
         . "sex CHAR NOT NULL,"
-        . "a_dob DATE NOT NULL,". "f_dob DATE NOT NULL,"
+            ."uid INT,"
+        . "a_dob INT NOT NULL,".
+            "f_dob INT NOT NULL,"
         . "pan_no VARCHAR(45),"
-        . "passport_no VARCHAR(45),"
+        . "pass_no VARCHAR(45),"
         . "p_email VARCHAR(45) NOT NULL,"
-        . "per_mob INT NOT NULL,"
+        . "per_mob INT NOT NULL,off_mob INT NOT NULL,"
         . "qualif VARCHAR(45) NOT NULL,"
         . "certf VARCHAR(45),"
         . "mother_tongue VARCHAR(45),"
-        . "marital_status VARCHAR(45) NOT NULL,"
-        . "annivercy VARCHAR(45),"
+        . "marital_status INT NOT NULL,"
+        . "anniv VARCHAR(45),"
         . "blood_grp VARCHAR(45) NOT NULL,"
         . "father_name VARCHAR(45) NOT NULL,"
         . "mother_name VARCHAR(45) NOT NULL,"
@@ -32,8 +34,6 @@ class emp_personal extends database {
         
         
         $result = parent::query_execute($query);
-        $error = mysql_error();
-        print ($error);
     }
 
    public function select_emp_data($eid,$params){
@@ -53,7 +53,5 @@ class emp_personal extends database {
            parent::query_execute($query);
        }
 } 
-
-
-$em_per = new emp_personal();    
+$em_per = new emp_personal();
 

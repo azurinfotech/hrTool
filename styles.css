@@ -1,0 +1,122 @@
+.logo {
+    width: 300px;
+    padding-right: 10%;
+    padding-top: 1%;
+}
+.login-block{
+    margin-top: 7%;
+}
+body{
+    background-color: rgba(0,0,0,0.03);
+}
+.site-header {
+    background-image: url("white-header.gif");
+    position: relative;
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+
+    /* Kokakify */
+    padding: 10px;
+    background: white;
+    min-height: 150px;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.site-header:after {
+    content: '';
+    -webkit-box-shadow: 100px 0 10px 20px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 100px 0 10px 20px rgba(0, 0, 0, .2);
+    box-shadow: 100px 0 10px 20px rgba(0, 0, 0, .2);
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    bottom: 20px;
+    right: 90px;
+    z-index: -1;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    transform: skew(-40deg);
+}
+
+#main-content {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.slogan {
+    font-family: 'Audiowide', cursive;
+}
+
+p, a, table, tr, td, li, ul, h2, h3, h1, h4 ,select,option,label,body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.ceo-message {
+    font-size: 18px;
+    text-align: justify;
+}
+
+input[type="text"], input[type="password"], input[type="textarea"], input[type="submit"],input[type="radio"],input[type="file"] {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid rgb(3, 3, 3);
+    padding-top: 1%;
+    margin-left: 10%;
+}
+.ceo-image{
+    padding-top: 10%;
+}
+.register-form .columns{
+min-height: 75px;
+}
+input[type="file"]{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+fieldset{
+    position: relative;
+    width: 100%;
+    padding-top: 5%;
+}
+#msform2{
+    margin-top: 5%;
+}
+#msform3{
+    margin-top: 10%;
+}
+.personal_form input[type="text"]{
+    width: 60%;
+}
+.row.row.error-message{
+    text-align: center;
+    padding-bottom: 15px;
+    border: 1px solid red;
+    padding-top: 10px;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    background-color: #F5A9A9;
+}
+.light-label{
+    color: dimgrey;
+}
+.row.row.resume-box{
+    border: 1px solid;
+    padding: 5px;
+    width: 90%;
+    margin-left: 4%;
+}
+.row.row.resume-box .large-5{
+    overflow: hidden;
+}
+.row.row.resume-box .large-6 p{
+    padding-top: 5%;
+}

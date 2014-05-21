@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <?php
-
+include_once 'session.php';
+$sess = new session();
+$sess ->startSession();
+$sess ->destroy();
 ?>
 <html>
-<head>
-   <header> </header>
-    <meta charset="UTF-8">
-    <title></title>
-    <link href="foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
-    <link href="login_page.css" rel="stylesheet" type="text/css"/>
-    <script src="jquery-1.11.0.js"></script>
-    <script src="foundation/js/foundation.min.js"></script>
-</head>
+<?php
+include_once 'user_db.php';
+include 'head.php'; ?>
+<title>Login Hr Tool</title>
+<header>
+    <?php include 'header.php'; ?>
+</header>
 <body>
 <!-- Azur logo -->
 
 <section id="main-content">
-    
+
     <div class="row form_size">
 
         <div class="row large-12 columns">
             <div class="large-9 medium-9 columns">
-                <div class="large-4 medium-5 small-3 columns">
+                <div class="large-4 medium-5 small-3 columns ceo-image">
 
                     <img src="foundation/ceo.png" alt="" height="200px" width="200px">
                 </div>
@@ -54,11 +49,12 @@ and open the template in the editor.
                     </p>
                 </div>
             </div>
-            <div class="panel large-3 medium-3 columns">
-                <form action="login_App.php">
+            <div class="panel large-3 medium-3 columns login-block">
+                <form action="login_App.php" method="post">
                     <input type="text" name="uname" placeholder="User name">
                     <input type="password" name="pass" placeholder="Password">
-                    <input type="submit" class="small radius button" value="submit" style="width:70px; height:40px; padding:10px;">
+                    <input type="submit" class="small radius button" value="submit"
+                           style="width:70px; height:40px; padding:10px;">
 
                     <div class="forgotpwd">
                         <a href="forgotpass.php" "> Forgot Password </a>
@@ -67,9 +63,10 @@ and open the template in the editor.
                 </form>
             </div>
         </div>
-        
 </section>
+<?php include 'footer.php';?>
 </body>
+
 </html>
 
 

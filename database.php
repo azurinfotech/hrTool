@@ -1,42 +1,44 @@
-    <?php
+<?php
+define('HOST', 'localhost');
+define('USERNAME', 'root');
+define('PASS', '');
+define('DB', 'hrtool');
+class database
+{
+    public $link;
 
-    /*
-     * To change this license header, choose License Headers in Project Properties.
-     * To change this template file, choose Tools | Templates
-     * and open the template in the editor.
-     */
-    //Define database constants
-    define('HOST','localhost');
-    define('USERNAME','root');
-    define('PASS','');
-    define('DB','hrtool');
-    class database{
-        public $link;
-
-       function  __construct(){
-           //connect to the database
-        $this ->link = mysqli_connect(HOST,USERNAME,PASS);
-        if(!$this ->link){
-            die('Could not connect to the server:'. mysqli_error($this ->link));
-        }
-           else{
-               $this -> select_db();
-           }
-    }
-
-        public function select_db(){
-            $db_sel = mysqli_select_db($this ->link,DB);
-            if(!$db_sel){
-                die('Could not connect to Database'.mysqli_error($this ->link));
-            }
-        }
-
-        public function query_execute($query){
-            $result = mysqli_query($this -> link,$query);
-            return $result;
-        }
-
-        function __destruct(){
-            mysqli_close($this -> link);
+    function  __construct()
+    {
+        //connect to the database
+        $this->link = mysqli_connect(HOST, USERNAME, PASS,DB);
+        if (!$this->link) {
+            die('Could not connect to the server:' . mysqli_error($this->link));
         }
     }
+    public function query_execute($query)
+    {
+       $stmt = mysqli_stmt_init($this ->link);
+        mysqli_stmt_prepare($stmt,$query);
+        mysqli_stmt_execute($stmt);
+    }
+    public function select_num_rows($query){
+        $stmt = mysqli_stmt_init($this ->link);
+        mysqli_stmt_prepare($stmt,$query);
+        var_dump($query);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_result($stmt);
+        $count = mysqli_stmt_num_rows($stmt);
+        return $count;
+    }
+    public function select_data($query){
+        $stmt = mysqli_stmt_init($this->link);
+        mysqli_stmt_prepare($stmt, $query);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        return $result;
+    }
+    function __destruct()
+    {
+        mysqli_close($this->link);
+    }
+}
