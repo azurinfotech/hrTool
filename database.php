@@ -20,6 +20,8 @@ class database
        $stmt = mysqli_stmt_init($this ->link);
         mysqli_stmt_prepare($stmt,$query);
         mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_insert_id($stmt);
+        return $result;
     }
     public function select_num_rows($query){
         $stmt = mysqli_stmt_init($this ->link);
@@ -36,6 +38,20 @@ class database
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
         return $result;
+    }
+    function get_data_rows($query){
+        if(mysqli_multi_query($this->link, $query)){
+            $result = mysqli_store_result($this ->link);
+            while($rows[] = mysqli_fetch_row($result));
+            return $rows;
+        }
+    }
+    function get_data_array($query){
+        if(mysqli_multi_query($this->link, $query)){
+            $result = mysqli_store_result($this ->link);
+            while($rows[] = mysqli_fetch_array($result));
+            return $rows;
+        }
     }
     function __destruct()
     {

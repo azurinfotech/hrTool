@@ -19,7 +19,7 @@ $db = new database();
 $pass = hash('sha1', $pass);
 $salt = hash('sha1', 'azurinfotech');
 $pass = $pass . $salt;
-$qry = "SELECT uid,off_email ,password FROM users WHERE off_email='$name'";
+$qry = "SELECT uid,off_email,password,role FROM users WHERE off_email='$name'";
 var_dump($qry);
 $result = mysqli_query($db->link, $qry);
 if (mysqli_num_rows($result) > 0) {
@@ -27,6 +27,7 @@ if (mysqli_num_rows($result) > 0) {
     if($pass = $row['password']){
          $sess -> __set('uid',$row['uid']);
         $sess -> __set('uname',$row['off_email']);
+        $sess -> __set('role',$row['role']);
         session_write_close();
         header('Location:home.php');
     }
