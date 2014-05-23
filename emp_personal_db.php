@@ -30,7 +30,7 @@ class emp_personal extends database {
         . "mother_name VARCHAR(45) NOT NULL,"
         . "wife_name VARCHAR(45),"
         . "husband_name VARCHAR(45),"
-        . "skills VARCHAR(45) NOT NULL,PRIMARY KEY(eid))";
+        . "skills VARCHAR(45) NOT NULL,PRIMARY KEY(eid),INDEX(uid))";
         
         
         $result = parent::query_execute($query);

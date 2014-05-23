@@ -15,6 +15,7 @@ class database
             die('Could not connect to the server:' . mysqli_error($this->link));
         }
     }
+
     public function query_execute($query)
     {
        $stmt = mysqli_stmt_init($this ->link);
