@@ -37,6 +37,13 @@ class database
         $result = mysqli_stmt_get_result($stmt);
         return $result;
     }
+    public function get_data_rows($query){
+        if(mysqli_multi_query($this->link,$query)){
+            $result = mysqli_store_result($this->link);
+            while($row[] = mysqli_fetch_row($result));
+            return $row;
+        }
+    }
     function __destruct()
     {
         mysqli_close($this->link);
