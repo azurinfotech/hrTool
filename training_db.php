@@ -11,12 +11,11 @@ class training extends database {
     public $query;
     public function __construct() {
            parent::__construct();
-        $query = "CREATE TABLE IF NOT EXISTS training(tid INT NOT NULL AUTO_INCREMENT,"
+        $query = "CREATE TABLE IF NOT EXISTS training(trid INT NOT NULL AUTO_INCREMENT,uid INT NOT NULL,"
         . "train_name VARCHAR(45) NOT NULL,"
         . "trainer_name VARCHAR(45) NOT NULL,"
-        . "train_sdate VARCHAR(45) NOT NULL,"
-        . "train_edate VARCHAR(45) NOT NULL,PRIMARY KEY(tid))";
-        
+        . "train_sdate INT NOT NULL,"
+        . "train_edate INT NOT NULL,PRIMARY KEY(trid))";
        $result = parent::query_execute($query);
         $error = mysql_error();
         print ($error);
