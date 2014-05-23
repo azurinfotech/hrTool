@@ -120,3 +120,12 @@ fieldset{
 .row.row.resume-box .large-6 p{
     padding-top: 5%;
 }
+
+input[type="textarea"]{
+    height: 150px;
+    margin-bottom: 10px;
+}
+.row.row h3{
+    padding: 5px;
+    padding-bottom: 10px;
+}
