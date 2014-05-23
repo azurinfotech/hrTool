@@ -71,7 +71,7 @@ session_write_close();
 header('Location:home.php');
 mysqli_error($db->link);
 ?>
-<?php
+
 // uploading a file
 
 

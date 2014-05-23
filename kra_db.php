@@ -12,7 +12,7 @@ class kra_db extends database {
     public function __construct() {
            parent::__construct();
         $query = "CREATE TABLE IF NOT EXISTS kra(kra_id INT NOT NULL AUTO_INCREMENT,"
-        . "kr_area VARCHAR(45) NOT NULL,"
+        . "kr_area VARCHAR(45) NOT NULL,uid INT NOT NULL,"
         . "kpa VARCHAR(45) NOT NULL,"
         . "weight_kpi VARCHAR(45) NOT NULL,"
         . "target VARCHAR(45) NOT NULL,"
