@@ -13,7 +13,7 @@ include 'head.php';
     $user = new database();
     $uid = $_SESSION['uid'];
     $qury = "SELECT off_email,fname,lname,emp_no,status,role,pic,resume,pan_no,pass_no,p_email,off_mob,per_mob,blood_grp
-     FROM users u INNER JOIN emp_personal emp ON u.uid = emp.uid WHERE u.uid = $uid";
+     FROM users u LEFT JOIN emp_personal emp ON u.uid = emp.uid WHERE u.uid = $uid";
     $result = $user->select_data($qury);
     $rows = mysqli_fetch_array($result);
     ?>

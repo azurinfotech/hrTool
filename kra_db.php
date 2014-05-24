@@ -18,7 +18,11 @@ class kra_db extends database {
         . "target VARCHAR(45) NOT NULL,"
         . "actual VARCHAR(45) NOT NULL,"
         . "score VARCHAR(45) NOT NULL,"
-        . "final_score VARCHAR(45),PRIMARY KEY(kra_id))";
+        . "final_score VARCHAR(45),"
+         . "first_quater VARCHAR(45),"
+        . "second_quater VARCHAR(45),"
+        . "third_quater VARCHAR(45),"
+        . "fourth_quater VARCHAR(45),PRIMARY KEY(kra_id))";
        
         $result = parent::query_execute($query);
         $error = mysql_error();

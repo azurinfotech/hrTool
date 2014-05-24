@@ -39,10 +39,11 @@ class newlogin extends database {
            else{
                $fields = '* ';
            }
-           $query = "SELECT ".$fields." from user". $condition;
+           $query = "SELECT ".$fields." from users". $condition;
           $result = parent::query_execute($query);
            return $result;
        }
+
 } 
 
 $userTbl = new newlogin();
