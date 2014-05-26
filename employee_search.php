@@ -30,7 +30,7 @@ $sess->startSession();
 </div>
 
 <div class="large-6 medium-6 small-6 columns">
-    <input type="text" name="fname" id="autosuggest"  placeholder="Search Employees" onkeyup="autosuggest()">
+    <input type="text" name="autosuggest" id="autosuggest"  placeholder="Search Employees" onkeyup="autosuggest()">
 
 </div>
 </body>
