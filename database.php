@@ -20,6 +20,8 @@ class database
        $stmt = mysqli_stmt_init($this ->link);
         mysqli_stmt_prepare($stmt,$query);
         mysqli_stmt_execute($stmt);
+         
+        
     }
     public function select_num_rows($query){
         $stmt = mysqli_stmt_init($this ->link);
@@ -37,6 +39,7 @@ class database
         $result = mysqli_stmt_get_result($stmt);
         return $result;
     }
+    
     function __destruct()
     {
         mysqli_close($this->link);

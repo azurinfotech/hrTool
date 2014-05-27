@@ -2,7 +2,7 @@
 include 'session.php';
 $sess = new session();
 $sess -> startSession();
-include 'database.php';
+include_once 'database.php';
 var_dump($_POST);
 $kra_id = $_POST['kra_id'];
 $kr_area = $_POST['kr_area'];
@@ -15,7 +15,7 @@ $final_score = $_POST['final_score'];
 $uid = $_SESSION['uid'];
 $db = new database();
 //$uid = $sess-> __get('uid');
-$query = "INSERT INTO kra(kra_id,kr_area,uid,kpa,weight_kpi,target,actual,score,final_score);
+$query = "INSERT INTO Kra(kra_id,kr_area,uid,kpa,weight_kpi,target,actual,score,final_score)
 VALUES ($kra_id,'$kr_area',$uid,'$kpa','$weight_kpi','$target','$actual','$score','$final_score')";
 $res=$db ->query_execute($query);
-header('Location:home.php');
+header('Location:kra_view.php');

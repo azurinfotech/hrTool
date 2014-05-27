@@ -18,7 +18,7 @@ class kra_db extends database {
         . "target VARCHAR(45) NOT NULL,"
         . "actual VARCHAR(45) NOT NULL,"
         . "score VARCHAR(45) NOT NULL,"
-        . "final_score VARCHAR(45),PRIMARY KEY(kra_id))";
+        . "final_score VARCHAR(45),PRIMARY KEY(kra_id),INDEX(uid))";
        
         $result = parent::query_execute($query);
         $error = mysql_error();
@@ -37,7 +37,7 @@ class kra_db extends database {
            else{
                $fields = '*';
            }
-           $query = "SELECT ".$fields." from Kra". $condition;
+           $query = "SELECT ".$fields." from kra". $condition;
            parent::query_execute($query);
        }
 
