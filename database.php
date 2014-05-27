@@ -7,6 +7,7 @@ class database
 {
     public $link;
 
+
     function  __construct()
     {
         //connect to the database
@@ -37,6 +38,20 @@ class database
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
         return $result;
+    }
+    public function get_data_rows($query){
+        try{
+        $stmt = mysqli_stmt_init($this -> link);
+        mysqli_stmt_prepare($stmt,$query);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        $rows = mysqli_fetch_assoc($result);
+        return $rows;
+        }
+        catch(mysqli_sql_exception $e){
+            throw new Exception;
+        }
     }
     function __destruct()
     {
