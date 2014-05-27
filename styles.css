@@ -129,3 +129,6 @@ input[type="textarea"]{
     padding: 5px;
     padding-bottom: 10px;
 }
+.address_form textarea{
+    resize: none;
+}
