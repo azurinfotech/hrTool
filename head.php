@@ -9,4 +9,5 @@
     <script src="personal_dtls.js" type="text/javascript"></script>
     <link rel="stylesheet" href="foundation/css/datepicker.css">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="training.js" type="text/javascript"></script>
 </head>
