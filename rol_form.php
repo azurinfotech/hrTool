@@ -10,7 +10,7 @@
 <?php include 'header.php'; ?>
         </header>
       
-    <div id="container2" class="row" align="center" style="margin-top:150px; width:200px;">
+    <div id="container2" class="row" style="margin-top:150px; width:200px; margin-left:250px;">
   
     <form class="container1" action="rol_app.php">
         <div class="panel large-10 medium-10"
@@ -21,6 +21,29 @@
  </div>
 </form>
     </div>
+        <table style="margin-left:500px; margin-top:-175px; position:absolute;">
+<thead>
+<tr>
+<th>S no</th>
+<th>Role Name</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Admin</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HR</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Employee</td>
+    </tr>
+
+</tbody>
+</table>
      <?php include 'footer.php'; ?>
 </body>
 </html>         

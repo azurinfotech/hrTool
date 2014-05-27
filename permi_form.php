@@ -20,7 +20,7 @@ var_dump($result);
         
     
 
-    <div id="container2" class="row" align="center" style="margin-top:150px; width:300px;">
+    <div id="container2" class="row" style="margin-top:150px; width:300px; margin-left:250px;">
 
         <form class="container1" action="permi_app.php" method="post">
             <div class="large-12 medium-12" style="text-align: center;"
@@ -38,8 +38,24 @@ var_dump($result);
 
                 </form>
             </div>
-    </div>
-    <?php include 'footer.php'; ?>
+    </div>               
+    <table style="margin-left:600px; margin-top:-175px; position:absolute;">
+<thead>
+<tr>
+<th>S no</th>
+<th>Permission Name</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>Can Edit Personal Details</td>
+    </tr>
+   
+
+</tbody>
+</table>   
+   <?php include 'footer.php'; ?>
         </body>
 </html>         
 
