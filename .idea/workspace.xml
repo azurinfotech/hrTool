@@ -26,64 +26,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Report_his_exp_App.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Report_his_exp_App.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Report_his_exp_App.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="22" selection-start="52" selection-end="52" vertical-scroll-proportion="0.09751434" vertical-offset="0" max-vertical-offset="523">
+            <state line="16" column="22" selection-start="502" selection-end="514" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Report_his_exp_page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Report_his_exp_page.php">
+      <file leaf-file-name="taxonomy_db.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxonomy_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="303" selection-end="303" vertical-scroll-proportion="3.9230769" vertical-offset="357" max-vertical-offset="1258">
+            <state line="7" column="28" selection-start="221" selection-end="221" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personal_App.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/personal_App.php">
+      <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="28" selection-start="705" selection-end="705" vertical-scroll-proportion="-10.153846" vertical-offset="127" max-vertical-offset="663">
+            <state line="73" column="8" selection-start="3220" selection-end="3220" vertical-scroll-proportion="-44.96154" vertical-offset="72" max-vertical-offset="1462">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database.php">
+      <file leaf-file-name="report_his_view.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/report_his_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="4" selection-start="1144" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="833">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_db.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user_db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="918">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register_Page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register_Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="82" selection-start="690" selection-end="698" vertical-scroll-proportion="-3.2692308" vertical-offset="255" max-vertical-offset="2057">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register_App.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register_App.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="3172" selection-end="3172" vertical-scroll-proportion="-16.692308" vertical-offset="824" max-vertical-offset="1360">
+            <state line="30" column="44" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.33333334" vertical-offset="344" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -98,10 +71,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="taxonomy_vocab.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/taxonomy_vocab.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personal_App.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personal_App.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="28" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register_App.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/register_App.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="1360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="emp_personal_db.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/emp_personal_db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="55" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1071">
+            <state line="32" column="55" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_App.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login_App.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -117,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/register_Page.php" />
         <option value="$PROJECT_DIR$/forgotpass.php" />
         <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/forgotpass_App.php" />
@@ -133,6 +140,8 @@
         <option value="$PROJECT_DIR$/register_App.php" />
         <option value="$PROJECT_DIR$/empOfficial_db.php" />
         <option value="$PROJECT_DIR$/Report_his_exp_App.php" />
+        <option value="$PROJECT_DIR$/search.php" />
+        <option value="$PROJECT_DIR$/report_his_view.php" />
       </list>
     </option>
   </component>
@@ -198,6 +207,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../newfold" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -265,7 +275,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -307,80 +317,80 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/empOfficial_db.php">
+    <entry file="file://$PROJECT_DIR$/training_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="110" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+        <state line="16" column="33" selection-start="559" selection-end="559" vertical-scroll-proportion="1.6153846" vertical-offset="314" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register_Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="82" selection-start="690" selection-end="698" vertical-scroll-proportion="-3.2692308" vertical-offset="255" max-vertical-offset="2057" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="54" selection-start="976" selection-end="976" vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Report_his_exp_page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="51" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="193" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="42" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/emp_personal_db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="55" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1071">
+        <state line="32" column="55" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login_App.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.9615384" vertical-offset="51" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="7.8461537" vertical-offset="204" max-vertical-offset="2159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kra_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1488" selection-end="1509" vertical-scroll-proportion="-25.846153" vertical-offset="144" max-vertical-offset="986" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="33" selection-start="559" selection-end="559" vertical-scroll-proportion="1.6153846" vertical-offset="314" max-vertical-offset="850" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="1144" selection-end="1165" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="818" selection-end="818" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="918">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/emp_personal_db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="55" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="530" selection-end="530" vertical-scroll-proportion="0.58508605" vertical-offset="0" max-vertical-offset="1462">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/personal_App.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="28" selection-start="705" selection-end="705" vertical-scroll-proportion="-10.153846" vertical-offset="127" max-vertical-offset="663">
+        <state line="23" column="28" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="663">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register_Page.php">
+    <entry file="file://$PROJECT_DIR$/register_App.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="82" selection-start="690" selection-end="698" vertical-scroll-proportion="-3.2692308" vertical-offset="255" max-vertical-offset="2057">
+        <state line="74" column="0" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.0" vertical-offset="722" max-vertical-offset="1360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxonomy_vocab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/taxonomy_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="221" selection-end="221" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
@@ -392,23 +402,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Report_his_exp_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="303" selection-end="303" vertical-scroll-proportion="3.9230769" vertical-offset="357" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register_App.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3172" selection-end="3172" vertical-scroll-proportion="-16.692308" vertical-offset="824" max-vertical-offset="1360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Report_his_exp_App.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="52" selection-end="52" vertical-scroll-proportion="0.09751434" vertical-offset="0" max-vertical-offset="523">
+        <state line="16" column="22" selection-start="502" selection-end="514" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="8" selection-start="3220" selection-end="3220" vertical-scroll-proportion="-44.96154" vertical-offset="72" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report_his_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="44" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.33333334" vertical-offset="344" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
