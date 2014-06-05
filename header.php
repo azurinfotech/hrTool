@@ -35,4 +35,3 @@
 </div>
 
 <?php //if(isset($_SESSION['uid'])){ ?>
-<?php //} ?>
